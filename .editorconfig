@@ -1,0 +1,81 @@
+# https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Ruby files
+[*.rb]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+[*.rbs]
+indent_style = space
+indent_size = 2
+
+# HTML and ERB templates
+[*.{html,erb}]
+indent_style = space
+indent_size = 2
+
+# CSS and preprocessor files
+[*.css]
+indent_style = space
+indent_size = 2
+
+# JavaScript and TypeScript
+[*.{js,ts}]
+indent_style = space
+indent_size = 2
+
+# JSON files
+[*.{json,jsonc}]
+indent_style = space
+indent_size = 2
+
+# YAML files
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# Bikeshed files
+[*.bs]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# Justfiles
+[Justfile]
+indent_style = space
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+
+# Configuration files
+[*.{ini,cfg,conf}]
+indent_style = space
+indent_size = 2
+
+# XML and SVG files
+[*.{xml,svg}]
+indent_style = space
+indent_size = 2
+
+# Gemspec and Rakefile
+[{Gemfile,Rakefile,*.gemspec}]
+indent_style = space
+indent_size = 2

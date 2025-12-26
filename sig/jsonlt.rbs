@@ -1,0 +1,33 @@
+module JSONLT
+  VERSION: String
+
+  class Error < StandardError
+  end
+
+  class Table
+    @path: String | Pathname
+
+    def initialize: (String | Pathname path) -> void
+
+    def get: (String key) -> Hash[String, untyped]?
+
+    def set: (String key, Hash[String, untyped] value) -> void
+
+    def delete: (String key) -> bool
+
+    def key?: (String key) -> bool
+
+    def keys: () -> Array[String]
+
+    def to_h: () -> Hash[String, Hash[String, untyped]]
+
+    def each: () { (String key, Hash[String, untyped] value) -> void } -> void
+            | () -> Enumerator[[String, Hash[String, untyped]], void]
+
+    def size: () -> Integer
+
+    alias length size
+
+    def compact!: () -> void
+  end
+end

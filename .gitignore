@@ -1,0 +1,60 @@
+# Ruby build artifacts
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/tmp/
+
+# Bundler
+/.bundle/
+/vendor/bundle/
+Gemfile.lock
+
+# RDoc/YARD documentation cache
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+# Environment
+/.env
+/.envrc
+.env.*
+!.env.example
+
+# Testing
+/.rspec_status
+/coverage/
+
+# Type checking
+/.typeprof.lock
+/typeprof.log
+
+# IDE/Editor (commented - prefer global gitignore)
+# .idea/
+# .vscode/
+
+# Project-specific local files
+.internal/
+.benchmarks/
+.claude/
+
+# Node.js (for markdownlint and biome)
+node_modules/
+
+# Python (for dev tools: codespell, vale, yamllint, prek)
+.venv/
+__pycache__/
+
+# Local configuration
+mise.local.toml
+tmp/
+
+# Vale styles (synced from packages via `vale sync`)
+.vale/
+
+# SBOM files
+*.cdx.json
